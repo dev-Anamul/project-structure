@@ -1,0 +1,34 @@
+{
+  "name": "project-structure",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "server:dev": "nodemon server.js",
+    "server:prod": "NODE_ENV=production node server.js",
+    "client": "npm start --prefix client",
+    "start": "concurrently \"yarn server:dev\" \"yarn client\""
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "concurrently": "^7.3.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.5.3",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.5-lts.1",
+    "nodemon": "^2.0.19",
+    "sharp": "^0.30.7",
+    "validator": "^13.7.0"
+  },
+  "devDependencies": {
+    "eslint": "8.2.0",
+    "eslint-config-airbnb-base": "15.0.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "2.25.2",
+    "eslint-plugin-prettier": "^4.2.1",
+    "prettier": "^2.7.1"
+  }
+}
